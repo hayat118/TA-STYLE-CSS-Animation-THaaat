@@ -1,0 +1,50 @@
+
+
+.container{
+  border: 3px solid black;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  
+}
+.box{
+  width: 100px;
+  height: 100px;
+  margin: 24px;
+
+  &:hover {
+    background-color: aqua;
+    animation-name: slide;
+    animation-duration: 0.5sec;
+    animation-timing-function: linear;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+  }
+}
+.b1{
+  background-color: red;
+  border: 1px solid black;
+
+
+}
+.b2{
+  background-color:green;
+  border: 1px solid black;
+
+
+}
+@keyframes slide {
+  0%{
+    background-color: blueviolet;
+    transform: scale(2);
+  }
+  50%{
+     background-color: blueviolet;
+     transform: scale(0.5);
+  }
+  100%{
+     background-color: black;
+     transform: scale(0.5);
+  }
+}

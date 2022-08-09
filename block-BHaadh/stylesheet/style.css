@@ -1,0 +1,73 @@
+.container {
+  border: 3px solid black;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 24px;
+}
+
+.box:hover {
+  background-color: aqua;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 0.5sec;
+          animation-duration: 0.5sec;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.b1 {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.b2 {
+  background-color: green;
+  border: 1px solid black;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-color: blueviolet;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    background-color: blueviolet;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    background-color: black;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-color: blueviolet;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  50% {
+    background-color: blueviolet;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    background-color: black;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+/*# sourceMappingURL=style.css.map */
